@@ -1,4 +1,4 @@
-# Spotify-Playlist-Migration-Tool-Using-Node.js-
+# Spotify-Playlist-Migration-Tool-Using-Node.js
 > **Description :**
 > 
 > 
