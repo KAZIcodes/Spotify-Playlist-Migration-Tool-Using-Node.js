@@ -25,3 +25,4 @@
 > - This app is designed to get maximum number of 50 playlists and if you have more than that, 50 of them at the top of the list will be shown.
 > - Status code for each request in the project is shown on the terminal but you can make it not to show status codes by commenting the `console.log()` part that is printing the status codes in the `getRequest`  and `postRequest` functions. but if you wanna keep them to make sure the program is working fine just note that everything is working fine if the GET status codes are all 200 and the POST status codes are all 201.
 > - If your country is banning Spotify or some how Spotify is not accessible for you, make sure to use a proper VPN for working with the program.
+> - For the record the code starts from main function if you wanna study it.
