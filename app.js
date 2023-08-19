@@ -345,54 +345,6 @@ function getRequest(options) {
 }
 
 
-/*
-async function fetchTracksForPlaylists2(playlists) {
-    const tracksPromises = chosen_playlists.map(async index => {
-        let offset = 0;
-        let total;
-        let tracks = [];
-
-        do {
-            const selected_tracks_options = {
-                url: `https://api.spotify.com/v1/playlists/${playlists.items[+index - 1].id}/tracks?offset=${offset}`,
-                headers: {
-                    Authorization: `Bearer ${access_token}`
-                }
-            };
-
-            try {
-                const body = await getRequest(selected_tracks_options);
-                const parsed = JSON.parse(body);
-                const tracksarr = parsed.items;
-
-                total = parsed.total;
-                offset += 100;
-
-
-                for (const obj of tracksarr) {
-
-                    if (obj.track !== null){  /!* it seems that some tracks objects info are seperated into two parts for example for number 11 track
-                                                obj.track is null but the next(or maybe 2 obj forward) obj has obj.track which is the actual obj for number 11
-                                                 LONG STORY SHORT THIS CHECKING IS ESSENTIAL *!/
-                        tracks.push(obj.track.uri);
-                    }
-
-                }
-
-                console.log(`Tracks from Playlist ${index} fetched...`);
-
-            } catch (error) {
-                console.error(`An error occurred on Fetching Tracks ${index}:`, error);
-            }
-        } while (total > offset);
-
-        return tracks;
-    });
-
-    return Promise.all(tracksPromises);
-}
-*/
-
 
 async function fetchTracksForPlaylists2(playlists) {
     const tracksPromises = chosen_playlists.map(async index => {
