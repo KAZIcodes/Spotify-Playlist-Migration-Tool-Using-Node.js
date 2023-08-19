@@ -34,14 +34,14 @@ let chosen_playlists = [];
 
 async function main(){
      let option;
-     rl.question('What do you wanna do ?\n 1.spotify to spotify\n 2.will come soon\nEnter Option Number: ', (input) => {
+     rl.question('What do you wanna do ?\n 1.spotify to spotify\n 2.May come later to the project\nEnter Option Number: ', (input) => {
         option = input;
 
         switch (option){
             case '1':
             {
-                client_id = '47c5c51e783f4e878a9c770fbd65e95f';
-                client_secret = 'b59c27d13b5742a18da00b70cbcd6caa';
+                client_id = 'YOUR_CLIENT_ID';
+                client_secret = 'YOUR_CLIENT_SECRET';
                 redirect_uri = 'http://localhost:3000/callback';
 
 
