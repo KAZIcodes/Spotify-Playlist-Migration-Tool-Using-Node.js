@@ -10,9 +10,10 @@
 > 
 > 1. First create an app in [developer.spotify.com](http://developer.spotify.com) and get client ID and client secret and place them in the code in place of variables with the same names.
 > 2. In the app you created at  [developer.spotify.com](http://developer.spotify.com)  you should copy and paste the redirect URI from the code which is http://localhost:3000/callback ; but you can change the port which is 3000 to any other random number other than the commons like 443(https port) but note that you should change the port in any part of the code that it’s mentioned.
-> 3. Download the files from the repository and place them in a directory(folder) and then install the modules used in the code(mentioned below) using npm(make sure to have Node.js and it’s package manager npm installed already) and the terminal in the directory.
-> 4. Use `node app.js` command in the directory to run the program.
-> 5. Follow the instructions in the running program :)
+> 3. Add the emails of the accounts you want to move from or move to in the settings of the app you just created at the spotify developer website; You can add up to 25 accounts and this limit is because of the app you created is not in extended quota mode(search for it in the context of Spotify API).
+> 4. Download the files from the repository and place them in a directory(folder) and then install the modules used in the code(mentioned below) using npm(make sure to have Node.js and it’s package manager npm installed already) and the terminal in the directory.
+> 5. Use `node app.js` command in the directory to run the program.
+> 6. Follow the instructions in the running program :)
 
 > **Modules Used :**
 > 
@@ -23,7 +24,7 @@
 
 > **BE AWARE :**
 > 
-> - This app is designed to get maximum number of 50 playlists and if you have more than that, 50 of them at the top of the list will be shown.
+> - This app is designed to get maximum number of 50(which is the limit for get playlist request using the Spotify web API) playlists and if you have more than that, 50 of them at the top of the list will be shown.
 > - Status code for each request in the project is shown on the terminal but you can make it not to show status codes by commenting the `console.log()` part that is printing the status codes in the `getRequest`  and `postRequest` functions. but if you wanna keep them to make sure the program is working fine just note that everything is working fine if the GET status codes are all 200 and the POST status codes are all 201.
 > - If your country is banning Spotify or some how Spotify is not accessible for you, make sure to use a proper VPN for working with the program.
 > - For the record the code starts from main function if you wanna study it.
