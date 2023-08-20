@@ -3,7 +3,7 @@
 > 
 > 
 > You can move your playlist from an old Spotify account to a new one using this tool.<br>
-> This project uses Spotify Web API to acquire the selected playlists from the old or any account and move them to the new or any other account by creating the new playlists in the new account by the same name and same tracks.
+> This project uses Spotify Web API to acquire the selected playlists from the old or any account and move them to the new or any other account by creating the new playlists in the new account with the same names and same tracks for each playlist.
 > 
 
 > **Usage :**
