@@ -15,9 +15,6 @@ const querystring = require('querystring');
 const request = require('request');
 const {json, raw} = require("express");
 
-//open module for opening tabs
-const open = require('opn');
-
 
 
 
